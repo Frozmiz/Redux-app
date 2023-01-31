@@ -15,6 +15,8 @@ export const actionGetPostError = () => ({
     type: GET_POST_ERROR,
 });
 
+// Con esta acción vamos a obtener un post individual de la API, almacenándolo en el estado que hemos generado.
+
 function getPost(postId) {
     return async (dispatch) => {
 
