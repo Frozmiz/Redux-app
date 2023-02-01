@@ -9,7 +9,7 @@ const Posts = ({dispatch, posts, loading, errors}) => {
         dispatch(getPosts());
     }, [dispatch]);
 
-    //La función showPosts que nos mostrará la lista, el mensaje de carga o el error según los estados de la aplicación.
+    //La función showPosts nos mostrará la lista, el mensaje de carga o el error según los estados de la aplicación.
 
     const showPosts = () => {
         if (loading) return <p>loading posts...</p>
