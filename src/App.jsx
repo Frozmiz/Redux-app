@@ -7,12 +7,14 @@ import {
 import Home from "./pages/Home";
 import Posts from './pages/Posts';
 import PostPage from './pages/PostPage';
+import Menu from "./components/Menu";
 
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <Menu/>
       <Routes>
         <Route exact path='/' component={Home} />
         <Route exact path='/posts' component={Posts}/>
