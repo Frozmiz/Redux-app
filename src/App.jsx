@@ -16,11 +16,11 @@ function App() {
     <Router>
       <Menu/>
       <Routes>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/posts' component={Posts}/>
-        <Route exact path='/posts/:postId' component={PostPage}/>
+        <Route path='/' element={<Home/>} />
+        <Route path='/posts' element={<Posts/>}/>
+        <Route path='/posts/:postId' element={<PostPage/>}/>
         {/* react-router-dom v5: <Redirect to="/" /> */}
-        <Route  render={() => <redirect to= "/" />} /> 
+        <Route path='*' element={<Home/>} />
       </Routes>
     </Router>
   );
